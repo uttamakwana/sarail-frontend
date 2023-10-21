@@ -1,0 +1,164 @@
+/* Utility Classes */
+
+/* Make content center inside a container */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Space between content */
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Only make display flex */
+.flex {
+  display: flex;
+}
+
+/* Display flex with direction column */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make position absolute with center in relative to parent */
+.pos-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* reset styles for input and button */
+.input,
+.button {
+  border: 1px solid grey;
+  outline: none;
+  background: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* cursor pointer */
+.button {
+  cursor: pointer;
+}
+
+/* cursor pointer to any card */
+.card {
+  cursor: pointer;
+}
+
+/* gap of 1rem between items */
+.gap-1 {
+  gap: 1rem;
+}
+
+/* gap of 2rem between items */
+.gap-2 {
+  gap: 2rem;
+}
+
+/* styling for headings */
+.heading {
+  font-family: "WS-EB";
+}
+
+/* styling for subheadings */
+.subheading {
+  font-family: "WS-B";
+}
+
+/* styling for texts */
+.text {
+  font-family: "WS";
+}
+
+/* margin block of 1rem means margin top and margin bottom */
+.mb-1 {
+  margin-block: 1rem;
+}
+
+/* margin block of 2rem means margin top and margin bottom */
+.mb-2 {
+  margin-block: 2rem;
+}
+
+/* margin inline of 1rem means margin left and margin right */
+.mi-1 {
+  margin-inline: 1rem;
+}
+
+/* margin inline of 2rem means margin left and margin right */
+.mi-2 {
+  margin-inline: 2rem;
+}
+
+/* padding of 1rem */
+.p-1 {
+  padding: 1rem;
+}
+
+/* padding of 2rem */
+.p-2 {
+  padding: 2rem;
+}
+
+/* padding block of 1rem means padding top and padding bottom */
+.pb-1 {
+  padding-block: 1rem;
+}
+
+/* padding block of 2rem means padding top and padding bottom */
+.pb-2 {
+  padding-block: 2rem;
+}
+
+/* padding inline of 1rem means padding left and padding right */
+.pi-1 {
+  padding-inline: 1rem;
+}
+
+/* padding inline of 2rem means padding left and padding right */
+.pi-2 {
+  padding-inline: 2rem;
+}
+
+/* make text align center */
+.text-center {
+  text-align: center;
+}
+
+/* make content center inline means from the left and right
+-> only happens when parent has full width
+*/
+.margin-auto {
+  margin-inline: auto;
+}
+
+/* border radius */
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.br-15 {
+  border-radius: 15px;
+}
+
+.br-20 {
+  border-radius: 20px;
+}
+
+/* It will underline the content */
+.underline {
+  text-decoration: underline;
+}

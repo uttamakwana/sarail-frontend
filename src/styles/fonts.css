@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "WS";
+  src: url(../assets/fonts/WorkSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "WS-B";
+  src: url(../assets/fonts/WorkSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "WS-EB";
+  src: url(../assets/fonts/WorkSans-ExtraBold.ttf);
+}
