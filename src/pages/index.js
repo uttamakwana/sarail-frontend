@@ -1,2 +1,4 @@
 import Home from "./Home/Home.jsx";
-export { Home };
+import Language from './Language/Language.jsx';
+
+export { Home, Language };
