@@ -7,6 +7,7 @@ import {
   MenuIcon,
   CloseIcon,
 } from "../../constants/icons.js";
+import { SarailLogo } from "../../constants/images.js";
 import { useState } from "react";
 
 const Header = () => {
@@ -18,7 +19,8 @@ const Header = () => {
       }`}
     >
       <h1 className="heading header-heading flex">
-        <TrainIcon /> Sarail
+        {/* <TrainIcon /> Sarail */}
+        <img src={SarailLogo} alt="logo" id="sarail-logo" /> Sarail
       </h1>
       {headerActive ? (
         <CloseIcon

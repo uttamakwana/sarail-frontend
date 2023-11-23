@@ -13,7 +13,9 @@ import { RiFolderInfoLine } from "react-icons/ri";
 // importing close icon
 import { TfiClose } from "react-icons/tfi";
 // importing next button
-import { ImForward } from "react-icons/im";
+// import { ImForward } from "react-icons/im";
+// importing next button
+import { IoMdArrowRoundForward } from "react-icons/io";
 
 export {
   FaEarthAsia as LanguageIcon,
@@ -23,5 +25,6 @@ export {
   LuContact2 as ContactIcon,
   RiFolderInfoLine as InfoIcon,
   TfiClose as CloseIcon,
-  ImForward as NextIcon,
+  // ImForward as NextIcon,
+  IoMdArrowRoundForward as NextIcon,
 };

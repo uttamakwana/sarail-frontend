@@ -12,3 +12,13 @@
   font-family: "WS-EB";
   src: url(../assets/fonts/WorkSans-ExtraBold.ttf);
 }
+
+@font-face {
+  font-family: "Magra";
+  src: url(../assets/fonts/Magra/Magra-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Magra-Bold";
+  src: url(../assets/fonts/Magra/Magra-Bold.ttf);
+}

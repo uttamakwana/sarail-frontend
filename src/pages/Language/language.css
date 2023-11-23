@@ -32,10 +32,16 @@
   /* height: 50px
   ; */
   /* aspect-ratio: 16 / 9; */
+  pointer-events: none;
 }
 
 .language-list-item-text {
   font-size: 1.25rem;
+  pointer-events: none;
+}
+
+.language-list-item-text strong {
+  color: var(--color-primary);
 }
 
 .language-list-item:hover,
@@ -47,8 +53,8 @@
 
 .language-next-button-container {
   position: absolute;
-  bottom: 5vh;
-  right: 2vw;
+  bottom: 2vh;
+  right: 5vw;
   background-color: var(--color-complement);
   padding: 0.5rem;
   border-radius: 50%;

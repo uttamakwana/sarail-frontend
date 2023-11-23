@@ -20,6 +20,12 @@
 
 .header-heading {
   color: var(--color-accent1);
+  gap: 10px;
+}
+
+#sarail-logo {
+  width: 50px;
+  height: 50px;
 }
 
 .header-menu-icon {

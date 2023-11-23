@@ -1,7 +1,10 @@
 :root {
-  --color-primary: #4591b3;
+  /* --color-primary: #4591b3; */
+  --color-primary: #294c62;
   /* --color-complement: #364954; */
-  --color-complement: #eee8a9;
+  /* --color-complement: #eee8a9; */
+  /* --color-complement: hsl(4, 81, 56, 13%); */
+  --color-complement: #fce6e4;
   --color-accent1: #fff;
   --color-accent2: #000;
   --color-accent3: #e5e5e5;
