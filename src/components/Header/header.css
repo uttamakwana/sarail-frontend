@@ -32,6 +32,7 @@
   width: 30px;
   height: 30px;
   fill: var(--color-accent1);
+  cursor: pointer;
 }
 
 .header-navigation {
@@ -45,6 +46,7 @@
   /* border-bottom-right-radius: 10px; */
   transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
   opacity: 0;
+  z-index: 10;
 }
 
 .header.active .header-navigation {
@@ -66,8 +68,15 @@
   background-color: var(--color-accent1);
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .header-navigation-list-item:last-child {
   border-bottom-left-radius: 20px;
+}
+
+.header-navigation-list-item img,
+.header-language-logo {
+  width: 50px;
+  cursor: pointer;
 }

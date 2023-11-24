@@ -16,6 +16,8 @@ import { TfiClose } from "react-icons/tfi";
 // import { ImForward } from "react-icons/im";
 // importing next button
 import { IoMdArrowRoundForward } from "react-icons/io";
+// importing search icon
+import { CiSearch } from "react-icons/ci";
 
 export {
   FaEarthAsia as LanguageIcon,
@@ -27,4 +29,5 @@ export {
   TfiClose as CloseIcon,
   // ImForward as NextIcon,
   IoMdArrowRoundForward as NextIcon,
+  CiSearch as SearchIcon
 };

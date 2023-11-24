@@ -12,6 +12,8 @@ import { useContext } from "react";
 import { Context } from "../../context/ContextProvider.jsx";
 //importing useNavigate for navigation
 import { useNavigate } from "react-router-dom";
+import i18n from "../../i18.js";
+import { useTranslation } from "react-i18next";
 
 const Language = () => {
   // importing states from the context
@@ -19,6 +21,9 @@ const Language = () => {
 
   // creating variable of useNavigate for navigation
   const navigate = useNavigate();
+
+  // for trasnlation
+  const { t } = useTranslation();
 
   // function handleClick
   function handleClick() {
@@ -30,27 +35,36 @@ const Language = () => {
       <Header />
       <h1 className="language-heading subheading mb-1 flex-center">
         <LanguageIcon className="big-icon" />
-        Select your language
+        {t("Select Your Language")}
       </h1>
       <section className="language-container mi-1">
         <ul className="language-list text">
           <li
             className="language-list-item br-5"
-            onClick={() => setSelectedLanguage("Hindi")}
+            onClick={() => {
+              setSelectedLanguage("Hindi");
+              i18n.changeLanguage("hi");
+            }}
           >
             <img src={IndiaLogo} alt="en-US" />
-            <span className="language-list-item-text">Hindi</span>
+            <span className="language-list-item-text">हिंदी</span>
           </li>
           <li
             className="language-list-item br-5"
-            onClick={() => setSelectedLanguage("Gujarati")}
+            onClick={() => {
+              setSelectedLanguage("Gujarati");
+              i18n.changeLanguage("gu");
+            }}
           >
             <img src={IndiaLogo} alt="en-US" />
-            <span className="language-list-item-text">Gujarati</span>
+            <span className="language-list-item-text">ગુજરાતી</span>
           </li>
           <li
             className="language-list-item br-5"
-            onClick={() => setSelectedLanguage("English")}
+            onClick={() => {
+              setSelectedLanguage("English");
+              i18n.changeLanguage("en");
+            }}
           >
             <img src={EnglishLogo} alt="en-US" className="accent3-border" />
             <span className="language-list-item-text">English</span>

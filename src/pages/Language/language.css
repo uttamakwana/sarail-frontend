@@ -51,6 +51,12 @@
   color: var(--color-accent1);
 }
 
+.language-list-item:hover strong,
+.language-list-item:focus strong,
+.language-list-item:active strong {
+  color: var(--color-complement);
+}
+
 .language-next-button-container {
   position: absolute;
   bottom: 2vh;
