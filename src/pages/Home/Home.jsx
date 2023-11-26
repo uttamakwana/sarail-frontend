@@ -12,6 +12,7 @@ import stationData from "../../utils/stationData.js";
 import { SearchIcon } from "../../constants/icons";
 // importing css
 import "./home.css";
+import { StationInformation } from "../../containers/index.js";
 
 const Home = () => {
   // variables of context
@@ -20,16 +21,30 @@ const Home = () => {
   const { t } = useTranslation();
   // state for staionData
   const [stations, setStations] = useState([]);
+  // state for activeStationInput
+  const [activeInput, setActiveInput] = useState(false);
+  // state for station value
+  const [stationName, setStationName] = useState("");
 
   // function handleSearchOptions
   let result = [];
   const handleSearchOptions = (e) => {
+    setStationName(e.target.value);
+    if (e.target.value) {
+      // setStationName(e.target.value);
+      setActiveInput(true);
+    }
+    if (!e.target.value) {
+      setActiveInput(false);
+    }
     result = stationData.filter((station) =>
       station.name.toLowerCase().includes(e.target.value.toLowerCase())
     );
     setStations(result);
     console.log(result);
   };
+
+  const searchInput = document.getElementById("station-search");
 
   return (
     <main className="home-page">
@@ -42,29 +57,48 @@ const Home = () => {
           <div className="search-input-wrapper flex-center">
             <input
               type="text"
+              value={stationName}
               name="station-search"
               id="station-search"
               className="input text"
-              placeholder="Search your station..."
+              placeholder={t("Search your station")}
               autoComplete="off"
               onChange={handleSearchOptions}
             />
             <SearchIcon className="search-icon" />
           </div>
-          <ul className="search-station-suggestions">
+          <ul
+            className={`search-station-suggestions ${
+              activeInput ? "active" : ""
+            }`}
+          >
             {stations.length !== stationData.length
               ? stations.map((station) => (
                   <li
                     className="search-station-suggested-item text clr-complement"
                     key={station.id}
+                    onClick={() => {
+                      setStationName(station.name);
+                      setStations([]);
+                    }}
                   >
-                    {t(station.name)}
+                    <span>{t(station.name)}</span>
                   </li>
                 ))
               : ""}
           </ul>
         </div>
       </div>
+      {stationName ? (
+        <p className="text max-350 margin-auto">
+          you have selected{" "}
+          <strong className="strong-text">{stationName}</strong>
+        </p>
+      ) : (
+        ""
+      )}
+      {/* Station Information */}
+      <StationInformation />
     </main>
   );
 };

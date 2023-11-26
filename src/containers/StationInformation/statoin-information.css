@@ -1,0 +1,21 @@
+.station-information-container {
+  max-width: 350px;
+  margin: 16px auto;
+}
+
+.station-information-container section {
+  margin-block: 16px;
+}
+
+.station-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.station-badge-icon {
+  width: 50px;
+  height: 50px;
+  fill: var(--color-primary);
+}

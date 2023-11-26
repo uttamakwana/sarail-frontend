@@ -40,7 +40,7 @@ const Language = () => {
       <section className="language-container mi-1">
         <ul className="language-list text">
           <li
-            className="language-list-item br-5"
+            className="language-list-item br-5 hover-effect"
             onClick={() => {
               setSelectedLanguage("Hindi");
               i18n.changeLanguage("hi");
@@ -50,7 +50,7 @@ const Language = () => {
             <span className="language-list-item-text">हिंदी</span>
           </li>
           <li
-            className="language-list-item br-5"
+            className="language-list-item br-5 hover-effect"
             onClick={() => {
               setSelectedLanguage("Gujarati");
               i18n.changeLanguage("gu");
@@ -60,7 +60,7 @@ const Language = () => {
             <span className="language-list-item-text">ગુજરાતી</span>
           </li>
           <li
-            className="language-list-item br-5"
+            className="language-list-item br-5 hover-effect"
             onClick={() => {
               setSelectedLanguage("English");
               i18n.changeLanguage("en");

@@ -44,18 +44,18 @@
   color: var(--color-primary);
 }
 
-.language-list-item:hover,
-.language-list-item:focus,
-.language-list-item:active {
+.language-list-item.hover-effect:hover,
+.language-list-item.hover-effect:focus,
+.language-list-item.hover-effect:active {
   background-color: var(--color-primary);
   color: var(--color-accent1);
 }
 
-.language-list-item:hover strong,
+/* .language-list-item:hover strong,
 .language-list-item:focus strong,
 .language-list-item:active strong {
   color: var(--color-complement);
-}
+} */
 
 .language-next-button-container {
   position: absolute;

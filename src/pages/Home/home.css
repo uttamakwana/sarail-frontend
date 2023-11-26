@@ -3,10 +3,18 @@
   max-width: 350px;
   background-color: var(--color-primary);
   position: relative;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  /* border-top-right-radius: 5px;
+  border-top-left-radius: 5px; */
+  border-radius: 5px;
   width: 90%;
   list-style: none;
+}
+
+.search-box.active .search-input-wrapper,
+.search-box.active,
+.search-input .search-station-suggestions {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .search-input-wrapper input {
@@ -34,14 +42,24 @@
 }
 
 .search-station-suggestions {
-  border-radius: 0 !important;
   position: absolute;
+  overflow-y: scroll;
+}
+
+.search-station-suggestions.active {
+  border-radius: 0 !important;
+  max-height: 50vh;
+  overflow-y: scroll;
 }
 
 .search-station-suggested-item {
   padding: 8px;
   padding-left: 16px;
   cursor: pointer;
+}
+
+.search-station-suggested-item span {
+  pointer-events: none;
 }
 
 .search-station-suggested-item:hover {

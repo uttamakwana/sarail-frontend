@@ -214,3 +214,19 @@
 .clr-accent3 {
   color: var(--color-accent3);
 }
+
+.align-center {
+  align-items: center;
+}
+
+.bg-clr-accent4 {
+  background-color: var(--color-accent4);
+}
+
+.max-350 {
+  max-width: 350px;
+}
+
+.strong-text {
+  color: var(--color-primary);
+}
