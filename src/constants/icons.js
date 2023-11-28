@@ -36,6 +36,10 @@ import { FaTrain } from "react-icons/fa";
 import { SiThreema } from "react-icons/si";
 // Alert icons
 import { CiCircleAlert } from "react-icons/ci";
+// announcement icon
+import { GrAnnounce } from "react-icons/gr";
+// speaker
+import { GiSpeaker } from "react-icons/gi";
 
 export {
   FaEarthAsia as LanguageIcon,
@@ -57,4 +61,6 @@ export {
   FaTrain as Train2Icon,
   SiThreema as ViewStopIcon,
   CiCircleAlert as AlertIcon,
+  GrAnnounce as AnnouncementIcon,
+  GiSpeaker as SpeakerIcon
 };

@@ -1,0 +1,51 @@
+.announcement-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.announcement-heading h2 {
+  line-height: normal;
+}
+
+.announcement-heading h3 {
+  line-height: normal;
+}
+
+.announcement p {
+  max-width: 250px;
+}
+
+.speaker-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.announcement-content {
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.announcement-content::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 16px;
+  width: 50px;
+}
+.announcement-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.announcement-utility-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.announcement-utility-badge img {
+  width: 40px;
+  height: 40px;
+}
+.announcement-utility-badge p {
+  font-size: 15px;
+}

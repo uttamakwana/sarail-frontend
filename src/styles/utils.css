@@ -230,3 +230,23 @@
 .strong-text {
   color: var(--color-primary);
 }
+
+.bg-clr-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-clr-complement {
+  background-color: var(--color-complement);
+}
+
+.bg-clr-accent {
+  background-color: var(--color-accent1);
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.p-8 {
+  padding: 8px;
+}

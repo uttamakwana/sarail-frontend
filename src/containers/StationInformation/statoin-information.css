@@ -1,6 +1,6 @@
 .station-information-container {
   max-width: 350px;
-  margin: 16px auto;
+  margin: 8px auto;
 }
 
 .station-information-container section {
@@ -12,10 +12,16 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
+  cursor: pointer;
 }
 
 .station-badge-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   fill: var(--color-primary);
+}
+
+.text.text-gujarati {
+  font-size: 15px;
+  letter-spacing: -1px;
 }

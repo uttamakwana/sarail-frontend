@@ -7,6 +7,8 @@ const ContextProvider = ({ children }) => {
   const [loadingState, setLoadingState] = useState(false);
   // selecting the language with the selectedLanguage state
   const [selectedLanguage, setSelectedLanguage] = useState("");
+  // station name
+  const [stationName, setStationName] = useState("");
 
   return (
     <Context.Provider
@@ -15,6 +17,7 @@ const ContextProvider = ({ children }) => {
         setLoadingState,
         selectedLanguage,
         setSelectedLanguage,
+        stationName, setStationName
       }}
     >
       {children}

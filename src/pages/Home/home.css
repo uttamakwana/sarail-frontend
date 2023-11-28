@@ -66,3 +66,18 @@
   background-color: var(--color-complement);
   color: var(--color-primary);
 }
+
+.forward-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: var(--color-primary);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.forward-button svg {
+  height: 40px;
+  width: 40px;
+  fill: var(--color-complement);
+}

@@ -1,0 +1,21 @@
+.bottom-tabs {
+  background-color: var(--color-primary);
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  padding: 0.5rem;
+  padding-inline: 1rem;
+  gap: 16px;
+}
+
+.bottom-tabs-container {
+  width: 100%;
+}
+
+.bottom-tabs img {
+  width: 40px;
+  height: 40px;
+  color: var(--color-primary);
+  fill: var(--color-complement);
+  /* background-color: var(--color-primary); */
+}

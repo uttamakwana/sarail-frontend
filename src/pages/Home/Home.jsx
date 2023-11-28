@@ -1,22 +1,25 @@
 // importing context
 import { useContext, useState } from "react";
 import { Context } from "../../context/ContextProvider";
+import { useNavigate } from "react-router-dom";
 
 // importing components
-import { Header } from "../../components";
+import { BottomTabs, Header } from "../../components";
 // importing useTraslation
 import { useTranslation } from "react-i18next";
 // importing stationData
 import stationData from "../../utils/stationData.js";
 // importing icons
-import { SearchIcon } from "../../constants/icons";
+import { NextIcon, SearchIcon } from "../../constants/icons";
 // importing css
 import "./home.css";
 import { StationInformation } from "../../containers/index.js";
 
 const Home = () => {
+  // navigation
+  const navigate = useNavigate();
   // variables of context
-  const { selectedLanguage } = useContext(Context);
+  const { selectedLanguage, stationName, setStationName } = useContext(Context);
   // for translation
   const { t } = useTranslation();
   // state for staionData
@@ -24,7 +27,7 @@ const Home = () => {
   // state for activeStationInput
   const [activeInput, setActiveInput] = useState(false);
   // state for station value
-  const [stationName, setStationName] = useState("");
+
 
   // function handleSearchOptions
   let result = [];
@@ -42,6 +45,16 @@ const Home = () => {
     );
     setStations(result);
     console.log(result);
+  };
+
+  // function handleClick
+  const handleClick = () => {
+    if (!stationName) {
+      alert("Please select a station to get announcements!");
+    } else {
+      alert("Success");
+      navigate("/announcements");
+    }
   };
 
   const searchInput = document.getElementById("station-search");
@@ -90,15 +103,20 @@ const Home = () => {
         </div>
       </div>
       {stationName ? (
-        <p className="text max-350 margin-auto">
-          you have selected{" "}
-          <strong className="strong-text">{stationName}</strong>
+        <p className="text max-350 margin-auto" style={{ marginBlock: "8px" }}>
+          {t("You have selected")}{" "}
+          <strong className="strong-text">{t(`${stationName}`)}</strong>
         </p>
       ) : (
         ""
       )}
       {/* Station Information */}
       <StationInformation />
+      {/* Bottom Tabs */}
+      {/* <BottomTabs /> */}
+      <div className="forward-button">
+        <NextIcon onClick={handleClick} />
+      </div>
     </main>
   );
 };

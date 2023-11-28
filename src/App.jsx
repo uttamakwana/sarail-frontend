@@ -8,7 +8,7 @@ import { loadingAnimation } from "./utils/app";
 import { Context } from "./context/ContextProvider";
 // import routing
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Language } from "./pages";
+import { Announcement, Home, Language } from "./pages";
 // importing i18n
 import i18n from "./i18";
 
@@ -38,6 +38,7 @@ const App = () => {
             </Suspense>
           }
         />
+        <Route exact path="announcements" element={<Announcement />} />
       </Routes>
     </BrowserRouter>
   );

@@ -53,7 +53,8 @@ const Header = () => {
           className="header-menu-icon"
           onClick={() => setHeaderActive(false)}
         />
-      ) : location.pathname === "/home" ? (
+      ) : location.pathname === "/home" ||
+        location.pathname === "/announcements" ? (
         <div>
           <div
             className="flex"
@@ -79,7 +80,8 @@ const Header = () => {
       ) : (
         " "
       )}
-      {location.pathname === "/home" && headerActive ? (
+      {location.pathname === "/home" ||
+      (location.pathname === "/announcements" && headerActive) ? (
         <HamburgerMenu setHeaderActive={setHeaderActive} />
       ) : (
         ""
