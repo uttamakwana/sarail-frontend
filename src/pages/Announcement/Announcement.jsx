@@ -33,14 +33,14 @@ const Announcement = () => {
       </p> */}
       {/* Announcement Header */}
       <div className="flex-center">
-        <AnnouncementIcon className="announcement-icon" />
+        <AnnouncementIcon className="announcement-icon" style={{fill: "var(--color-complement)"}} />
         <div className="announcement-heading mb-1">
-          <h2 className="subheading clr-primary">Announcement</h2>
+          <h2 className="subheading clr-primary">Announcements</h2>
           <p className="text clr-primary">Western Railways</p>
         </div>
       </div>
       {/* Announcement Main Content */}
-      <section className="announcement-content max-350 margin-auto bg-clr-complement p-1 br-5">
+      <section className="announcement-content max-350 margin-auto bg-clr-accent4 p-1 br-5">
         {announcements &&
           announcements.map((announcement) => (
             <div

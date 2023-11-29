@@ -7,5 +7,21 @@ import AnnouncementLogo from "../assets/logo/announcement.svg";
 import CompassLogo from "../assets/logo/compass.svg";
 import UserQueryLogo from "../assets/logo/userquery.svg";
 import ListenLogo from "../assets/logo/listen.svg";
+import ChatbotPrimaryLogo from "../assets/logo/chatbot-primary.svg";
+import ALetterLogo from "../assets/logo/aletter.svg";
+import MicrophoneLogo from "../assets/logo/microphone.svg";
 
-export { EnglishLogo, IndiaLogo, SarailLogo, ChatBotLogo, HomeLogo, AnnouncementLogo, CompassLogo, UserQueryLogo, ListenLogo };
+export {
+ MicrophoneLogo,
+  EnglishLogo,
+  IndiaLogo,
+  SarailLogo,
+  ChatBotLogo,
+  HomeLogo,
+  AnnouncementLogo,
+  CompassLogo,
+  UserQueryLogo,
+  ListenLogo,
+  ChatbotPrimaryLogo,
+  ALetterLogo
+};

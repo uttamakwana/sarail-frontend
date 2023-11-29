@@ -3,7 +3,7 @@
   position: fixed;
   width: 100vw;
   bottom: 0;
-  padding: 0.5rem;
+  padding: 1rem;
   padding-inline: 1rem;
   gap: 16px;
 }
@@ -13,8 +13,8 @@
 }
 
 .bottom-tabs img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   color: var(--color-primary);
   fill: var(--color-complement);
   /* background-color: var(--color-primary); */

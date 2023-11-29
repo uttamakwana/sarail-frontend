@@ -18,6 +18,11 @@
 .speaker-icon {
   width: 40px;
   height: 40px;
+  opacity: 0.5;
+}
+
+.announcement-icon path {
+  stroke: var(--color-primary);
 }
 
 .announcement-content {

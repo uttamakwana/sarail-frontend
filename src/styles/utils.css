@@ -243,10 +243,44 @@
   background-color: var(--color-accent1);
 }
 
+.bg-clr-accent4 {
+  background-color: var(--color-accent4);
+}
+
 .mt-8 {
   margin-top: 8px;
 }
 
 .p-8 {
   padding: 8px;
+}
+
+.big-icon {
+  height: 50px;
+  width: 50px;
+  fill: var(--color-accent1);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.mb-8 {
+  margin-block: 8px;
+}
+
+.mi-8 {
+  margin-inline: 8px;
+}
+
+.pb-8 {
+  padding-block: 8px;
+}
+
+.pi-8 {
+  padding-inline: 8px;
 }

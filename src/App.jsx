@@ -8,7 +8,7 @@ import { loadingAnimation } from "./utils/app";
 import { Context } from "./context/ContextProvider";
 // import routing
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Announcement, Home, Language } from "./pages";
+import { Announcement, Chatbot, Home, Language } from "./pages";
 // importing i18n
 import i18n from "./i18";
 
@@ -39,6 +39,7 @@ const App = () => {
           }
         />
         <Route exact path="announcements" element={<Announcement />} />
+        <Route exact path="chatbot" element={<Chatbot />} />
       </Routes>
     </BrowserRouter>
   );
