@@ -1,0 +1,8 @@
+Fonts:-
+
+1. Garamond (serif):- For making elegent ( suitable for logos like Google, Amazon )
+2. Bodoni (serif):- To make look sexier ( headings in magazines )
+3. Century Expanded (serif):- To make text most readable ( used in books and maganize )
+4. Futura (sans-serif):- Logos like Redbull, Calvin Klein, Gillete, Omega, Discover, Domino's Pizza, Cisco
+5. Times Roman (serif):- Made by Times maganize to make content look readable
+6. Helvetica (sans-serif):- Logos like Panasonic, BMW, Jeep, Motorola, Kawasaki, Oral-B, Harley-Davidson, Toyota

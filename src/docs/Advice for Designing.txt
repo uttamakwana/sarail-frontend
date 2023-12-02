@@ -1,0 +1,63 @@
+Advice for designing:-
+
+1. As we have define our Projects scope and deliverables we are good to advanced in our next step.
+
+2. Inspiration:-
+Explore "Railway Information and annoucement" related website, both current and timeless to grab good design and trends.
+
+3. Wireframe and sketching:-
+As we know about our deliverables and inspirations from other website it is mandatory to drow a rough sktech of our website. 
+Because everything after this step needed how our website is going to look.
+So draw rough sketches to branistrom our layout and content placement. 
+Create wireframe to outline the basic structure and flow of your design.
+
+4. Must know design principles like balance, contrast, alignment and consistency. We must ensure that content is readble. It's our top priority.
+
+5. Color Palette:- 
+a) Primary colors:- This colors are used for most primary things like header, blog or main some cards, which provides some sense of trust and reliablity. 
+ex. Dark Blue(#003366)
+
+b) Secondary colors:- This colors are used for small elements like buttons and interactive elements to create contrast and draw attention. ex. (light blue #66ccff)
+
+White (#fff) for background elements to ensure readablity and clean look.
+
+c) Accent colors:- 
+Yellow(#ffd700) for important announcement, alerts or call-to-action buttons to capture attention
+
+d) Neutrals:-
+Light gray(#f0f0f0) for text contnet backgrond to maintain readablity and reduce visual strain
+Dark gray(#333333) used for text to create contrast with the white background
+
+
+6. Typography:- 
+
+a) Headings: 
+heading: 36px
+sub-heading: 28px
+small-heading: 24px
+-> font-weight: bold
+
+b) Body text: 16px
+-> font-weight: regular
+
+c) Buttons: 16px
+-> font-weight: regular
+
+Maintain a line height of 1.5 for body text to improve readablity
+
+Use consistent spacing, such as 1.5times the font size, between paragraphs and headers for clear sepration
+
+7) Responsive breakpoints:
+
+Desktop(large screen) -> widht > 1200px
+Laptop/Tablet -> 768px < width < 1200px
+Mobile -> width < 768px
+
+!! We must foucs more upon mobile devices. 
+
+
+Besides for this there are things to remember while desiging:-
+1. Clear and User-friendly navigation menu to find any information easily
+2. Keyboard navigation for more accessibility (like when someone press esc any open dialog block must close, etc...)
+3. Icons to enhance visual communication such as alert icons
+
